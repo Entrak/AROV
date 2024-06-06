@@ -1,3 +1,4 @@
+// Assigns buttons to pins on the Arduino Nano
 #define Button1 2
 #define Button2 3
 #define Button3 4
@@ -8,6 +9,7 @@
 #define Button8 9
 #define Button9 10
 
+// Set the default value of the state. 1 = button up (not active).
 struct State
   {
     bool LHF: 1;
@@ -62,5 +64,5 @@ void loop()
  else if  (state.SL == LOW && state.SR == HIGH)   Serial.println('Y');  // Slide Left (Y-axis)
  else if  (state.SL == HIGH && state.SR == LOW)   Serial.println('y');  // Slide Right (-Z-axis)
  else if  (state.Light == LOW)                    Serial.println('L');  // Lights on
- else {                                           Serial.println('O');} // Sets defaults
+ else {                                           Serial.println('O');} // Use default values
 }
