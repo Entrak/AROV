@@ -1,0 +1,13 @@
+Motor controls:
+LHR = Left Horisontal Rear
+LHF = Left Horizontal Front
+RHR = Right Horizontal Rear
+RHF = Right Horizontal Front
+SL = Slide Left
+SR = Slide Right
+VD = Vertical Down
+VU = Vertical Up
+
+Communication:
+RX = Recieve transmission
+TX = Transport (send) transmission
